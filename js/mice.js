@@ -5,7 +5,7 @@ let card = JSON.parse(localStorage.getItem("itm")) || [];
 
 const mycardsarr = [
   {
-    img:"/img2/Mice/MICE-2.png",
+    img:"img2/Mice/MICE-2.png",
     title: "G305 LIGHTSPEED",
     dicrebtion: "Wireless Gaming Mouse - Sayu/Thoma/Shikanoin Heizou Special Edition",
     slry: 39.99,
@@ -15,7 +15,7 @@ const mycardsarr = [
     dlardell:"",
   },
   {
-    img:"/img2/Mice/MICE-3.png",
+    img:"img2/Mice/MICE-3.png",
     title: "PRO X SUPERLIGHT 2 DEX",
     dicrebtion: "LIGHTSPEED Wireless Gaming Mouse",
     slry: 149.99,
@@ -25,7 +25,7 @@ const mycardsarr = [
     dlardell:"$",
   },
   {
-    img:"/img2/Mice/MICE-4.png",
+    img:"img2/Mice/MICE-4.png",
     title: "G309 LIGHTSPEED - Genshin Impact Edition",
     dicrebtion: "Kamisato Ayaka Edition Wireless Gaming Mouse",
     slry: 79.99,
@@ -35,7 +35,7 @@ const mycardsarr = [
     dlardell:"",
   },
   {
-    img:"/img2/Mice/MICE-5.png",
+    img:"img2/Mice/MICE-5.png",
     title: "G502 X PLUS",
     dicrebtion: "LIGHTSPEED Wireless Gaming Mouse with LIGHTSYNC RGB",
     slry: 179.99,
@@ -45,7 +45,7 @@ const mycardsarr = [
     dlardell:"",
   },
   {
-    img:"/img2/Mice/MICE-6.png",
+    img:"img2/Mice/MICE-6.png",
     title: "PRO X SUPERLIGHT 2",
     dicrebtion: "LIGHTSPEED Wireless Gaming Mouse",
     slry: 139.99,
@@ -55,7 +55,7 @@ const mycardsarr = [
     dlardell:"$",
   },
   {
-    img:"/img2/Mice/MICE-7.png",
+    img:"img2/Mice/MICE-7.png",
     title: "G502 X LIGHTSPEED",
     dicrebtion: "Wireless Gaming Mouse",
     slry: 159.99,
@@ -66,7 +66,7 @@ const mycardsarr = [
     
   },
   {
-    img:"/img2/Mice/MICE-8.png",
+    img:"img2/Mice/MICE-8.png",
     title: "PRO X SUPERLIGHT",
     dicrebtion: "LIGHTSPEED Wireless Gaming Mouse",
     slry: 129.99,
@@ -76,7 +76,7 @@ const mycardsarr = [
     dlardell:"$",
   },
   {
-    img:"/img2/Mice/MICE-10.png",
+    img:"img2/Mice/MICE-10.png",
     title: "G309 LIGHTSPEED Wireless Mouse",
     dicrebtion: "Wireless Gaming Mouse with LIGHTFORCE Switches",
     slry: 69.99,
@@ -86,7 +86,7 @@ const mycardsarr = [
     dlardell:"$",
   },
   {
-    img:"/img2/Mice/MICE-11.png",
+    img:"img2/Mice/MICE-11.png",
     title: "PRO 2 LIGHTSPEED",
     dicrebtion: "Ambidextrous LIGHTSPEED Wireless Gaming Mouse",
     slry: 119.99,
@@ -96,7 +96,7 @@ const mycardsarr = [
     dlardell:"$",
   },
   {
-    img:"/img2/Mice/MICE-12.png",
+    img:"img2/Mice/MICE-12.png",
     title: "G705",
     dicrebtion: "LIGHTSPEED Wireless Gaming Mouse",
     slry: 99.99,
@@ -106,7 +106,7 @@ const mycardsarr = [
     dlardell:"",
   },
   {
-    img:"/img2/Mice/MICE-13.png",
+    img:"img2/Mice/MICE-13.png",
     title: "G305",
     dicrebtion: "LIGHTSPEED Wireless Gaming Mouse",
     slry: 39.99,
@@ -116,7 +116,7 @@ const mycardsarr = [
     dlardell:"$",
   },
   {
-    img:"/img2/Mice/MICE-14.png",
+    img:"img2/Mice/MICE-14.png",
     title: "G502",
     dicrebtion: "Wired Gaming Mouse",
     slry: 69.99,
@@ -126,7 +126,7 @@ const mycardsarr = [
     dlardell:"",
   },
   {
-    img:"/img2/Mice/MICE-15.png",
+    img:"img2/Mice/MICE-15.png",
     title: "G203",
     dicrebtion: "Wired Gaming Mouse",
     slry: 39.99,

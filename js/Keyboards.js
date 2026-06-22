@@ -7,7 +7,7 @@ let card = JSON.parse(localStorage.getItem("itm"))||[]
 
 const mycardsarr = [
   {
-    img:"/img2/Keyboards/keybord-16.png",
+    img:"img2/Keyboards/keybord-16.png",
     title: "PRO X TKL RAPID",
     dicrebtion: "Wired Gaming Keyboard- Analog Switches",
     dlar:"$",
@@ -17,7 +17,7 @@ const mycardsarr = [
     discount: "$30.00 OFF",
   },
   {
-    img:"/img2/Keyboards/keybord-15.png",
+    img:"img2/Keyboards/keybord-15.png",
     title: "G515 TKL",
     dicrebtion: "Wired Low Profile Gaming Keyboard",
     slry: 109.99,
@@ -27,7 +27,7 @@ const mycardsarr = [
     dlardell:"$",
   },
   {
-    img:"/img2/Keyboards/keybord-7.png",
+    img:"img2/Keyboards/keybord-7.png",
     title: "G915 X LIGHTSPEED",
     dicrebtion: "Wireless Low Profile Gaming Keyboard",
     slry: 219.99,
@@ -37,7 +37,7 @@ const mycardsarr = [
     dlardell:"",
   },
   {
-    img:"/img2/Keyboards/keybord-8.png",
+    img:"img2/Keyboards/keybord-8.png",
     title: "G915 X LIGHTSPEED TKL",
     dicrebtion: "Wireless Low Profile Gaming Keyboard",
     slry: 229.99,
@@ -47,7 +47,7 @@ const mycardsarr = [
     dlardell:"",
   },
   {
-    img:"/img2/Keyboards/keybord-9.png",
+    img:"img2/Keyboards/keybord-9.png",
     title: "G915 X",
     dicrebtion: "Wired Low Profile Gaming Keyboard",
     slry: 199.99,
@@ -57,7 +57,7 @@ const mycardsarr = [
     dlardell:"",
   },
   {
-    img:"/img2/Keyboards/keybord-6.png",
+    img:"img2/Keyboards/keybord-6.png",
     title: "G515 LIGHTSPEED TKL",
     dicrebtion: "Wireless Low Profile Gaming Keyboard",
     slry: 149.99,
@@ -67,7 +67,7 @@ const mycardsarr = [
     dlardell:"$",
   },
   {
-    img:"/img2/Keyboards/keybord-13.png",
+    img:"img2/Keyboards/keybord-13.png",
     title: "PRO X 60",
     dicrebtion: "Wireless 60% Gaming Keyboard- Optical Switches",
     slry: 149.99,
@@ -77,7 +77,7 @@ const mycardsarr = [
     dlardell:"$",
   },
   {
-    img:"/img2/Keyboards/keybord-3.png",
+    img:"img2/Keyboards/keybord-3.png",
     title: "PRO X TKL",
     dicrebtion: "Wireless Gaming Keyboard- Mechanical Switches",
     slry: 199.99,
@@ -87,7 +87,7 @@ const mycardsarr = [
     dlardell:"$",
   },
   {
-    img:"/img2/Keyboards/keybord-8.png",
+    img:"img2/Keyboards/keybord-8.png",
     title: "G915 TKL",
     dicrebtion: "Wireless Low Profile Gaming Keyboard",
     slry: 239.99,
@@ -97,7 +97,7 @@ const mycardsarr = [
     dlardell:"",
   },
   {
-    img:"/img2/Keyboards/keybord-14.png",
+    img:"img2/Keyboards/keybord-14.png",
     title: "G815",
     dicrebtion: "Wired Low Profile Gaming Keyboard",
     slry: 119.99,
@@ -107,7 +107,7 @@ const mycardsarr = [
     dlardell:"",
   },
   {
-    img:"/img2/Keyboards/keybord-5.png",
+    img:"img2/Keyboards/keybord-5.png",
     title: "G715",
     dicrebtion: "Wireless Gaming Keyboard and Palmrest- Mechanical Switches",
     slry: 189.99,
@@ -117,7 +117,7 @@ const mycardsarr = [
     dlardell:"",
   },
   {
-    img:"/img2/Keyboards/keybord-1.png",
+    img:"img2/Keyboards/keybord-1.png",
     title: "G213 Prodigy",
     dicrebtion: "RGB Gaming Keyboard",
     slry: 49.99,
@@ -127,7 +127,7 @@ const mycardsarr = [
     dlardell:"$",
   },
   {
-    img:"/img2/Keyboards/keybord-2.png",
+    img:"img2/Keyboards/keybord-2.png",
     title: "G915",
     dicrebtion: "Wireless Low Profile Gaming Keyboard",
     slry: 249.99,
@@ -137,7 +137,7 @@ const mycardsarr = [
     dlardell:"",
   },
   {
-    img:"/img2/Keyboards/keybord-12.png",
+    img:"img2/Keyboards/keybord-12.png",
     title: "G512",
     dicrebtion: "Wired Gaming Keyboard- Mechanical Switches",
     slry: 99.99,
@@ -147,7 +147,7 @@ const mycardsarr = [
     dlardell:"",
   },
   {
-    img:"/img2/Keyboards/keybord-4.png",
+    img:"img2/Keyboards/keybord-4.png",
     title: "PRO",
     dicrebtion: "Wired Gaming Keyboard- Mechanical Switches",
     slry: 109.99,
@@ -157,7 +157,7 @@ const mycardsarr = [
     dlardell:"$",
   },
   {
-    img:"/img2/Keyboards/keybord-11.png",
+    img:"img2/Keyboards/keybord-11.png",
     title: "G713",
     dicrebtion: "Wired Gaming Keyboard and Palmrest- Mechanical Switches",
     slry: 169.99,

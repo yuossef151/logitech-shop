@@ -199,23 +199,23 @@ nav .num p {
 }
 
 .img1 {
-  background-image: image-set(url(/img2/logitech/imgi_44_logitechg-g522-lightspeed-hpb-thumbnail.jpg));
+  background-image: url("../img2/logitech/imgi_44_logitechg-g522-lightspeed-hpb-thumbnail.jpg");
   border: solid 1px #0099ff;
 }
 
 .img2 {
   border: solid 1px #28292a;
-  background-image: image-set(url(/img2/logitech/imgi_46_logitechg-play-hpb-thumbnail.jpg));
+  background-image: url("../img2/logitech/imgi_46_logitechg-play-hpb-thumbnail.jpg");
 }
 
 .img3 {
   border: solid 1px #28292a;
-  background-image: image-set(url(/img2/logitech/imgi_48_logitechg-g-cloud-black-hpb-thumbnail.jpg));
+  background-image:url("../img2/logitech/imgi_48_logitechg-g-cloud-black-hpb-thumbnail.jpg");
 }
 
 .img4 {
   border: solid 1px #28292a;
-  background-image: image-set(url(/img2/logitech/imgi_50_logitechg-sim-series-hpb-thumbnail.jpg));
+  background-image:url("../img2/logitech/imgi_50_logitechg-sim-series-hpb-thumbnail.jpg");
 }
 
 /* تأثير الـ Hover الأصلي الخاص بك (معالجة الحركة للأعلى بسلاسة) */
@@ -268,17 +268,23 @@ nav .num p {
   overflow: hidden;
 }
 
+.shop-NOW p{
+  color:white
+}
+.shop-NOW h3{
+  color:white
+}
 /* الحفاظ على خلفيات الصور المحددة برمجياً */
 .swiper-slide.imgs1 {
-  background-image: image-set(url(/img2/logitech/imgi_52_end-of-summer-sale-promo-slide-banner-desktop.jpg));
+  background-image: url("../img2/logitech/imgi_52_end-of-summer-sale-promo-slide-banner-desktop.jpg");
 }
 
 .swiper-slide.imgs2 {
-  background-image: image-set(url(/img2/logitech/imgi_53_logitech-g-slideshow-student-discount-desktop.jpg));
+  background-image: url("../img2/logitech/imgi_53_logitech-g-slideshow-student-discount-desktop.jpg");
 }
 
 .swiper-slide.imgs3 {
-  background-image: image-set(url(/img2/logitech/imgi_54_logitechg-slideshow-sim-racing-desktop-2.jpg));
+  background-image: url("../img2/logitech/imgi_54_logitechg-slideshow-sim-racing-desktop-2.jpg");
 }
 
 /* التحكم التلقائي بالنصوص داخل السلايدات لتفادي الكسر */

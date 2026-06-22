@@ -443,7 +443,7 @@ nav .num p {
     color: white;
     background-size: cover;
     background-position: center; 
-    background-image: url(/img2/test/imgi_42_pro-series-lp-join-elite-banner-desktop.jpg);
+    background-image: url("../img2/test/imgi_42_pro-series-lp-join-elite-banner-desktop.jpg");
     padding-left: 20px; 
 }
 
@@ -903,7 +903,7 @@ next.swiper-button-disabled,
     background-size: cover; 
     background-position: center center; /* تضمن توسيط الصورة دائماً */
     background-repeat: no-repeat;
-    background-image: url(/img2/test/imgi_43_pro-series-lp-hub-settings-banner-desktop.jpg);
+    background-image: url("../img2/test/imgi_43_pro-series-lp-hub-settings-banner-desktop.jpg");
 }
 
 .sec-10 .bac-img h1 {

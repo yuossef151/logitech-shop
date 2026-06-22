@@ -93,32 +93,32 @@ var swiperCategory = new Swiper(".my-Swipers", {
 
 const slidArr = [
   {
-    img:"/img2/logitech/imgi_1_pro-series-card-new.jpg",
+    img:"img2/logitech/imgi_1_pro-series-card-new.jpg",
     tite: "PRO SERIES ",
     titletow: "Zero distractions. Nothing between you and the win.",
     href: "SHOP PRO SERIES",
     href2: "CHAMPIONS.html",
   },
   {
-    img:"/img2/logitech/imgi_2_sim-racing-card.jpg",
+    img:"img2/logitech/imgi_2_sim-racing-card.jpg",
     tite: "SIM RACING",
     titletow: "Feel the thrill of the race with innovations in immersive realism.",
     href: "SHOP SIM SERIES ",
   },
   {
-    img:"/img2/logitech/imgi_3_astro-series-card.jpg",
+    img:"img2/logitech/imgi_3_astro-series-card.jpg",
     tite: "ASTRO SERIES",
     titletow: "Unparalleled realism, detail and style that gets you off the couch and into the game.",
     href: "SHOP ASTRO SERIES",
   },
   {
-    img:"/img2/logitech/imgi_4_g5-series-card.jpg",
+    img:"img2/logitech/imgi_4_g5-series-card.jpg",
     tite: "G5 SERIES",
     titletow: "Become a legend with the ultimate legendary gear.",
     href: "SHOP G5 SERIES",
   },
   {
-    img:"/img2/logitech/imgi_5_game-stream-create-card.jpg",
+    img:"img2/logitech/imgi_5_game-stream-create-card.jpg",
     tite: "GAME, STREAM & CREATE",
     titletow: "Your stream. Your setup. There’s no limit to the ways you can customize your Logitech G gaming and streaming studio.",
     href: "SHOP THE STUDIO",
@@ -143,19 +143,19 @@ if (slid) {
 
 const slidsArr = [
   {
-    img:"/img2/logitech/imgi_6_gaming-mice.jpg",
+    img:"img2/logitech/imgi_6_gaming-mice.jpg",
     tite: "GAMING MICE",
   },
   {
-    img:"/img2/logitech/imgi_7_gaming-mousepad.jpg",
+    img:"img2/logitech/imgi_7_gaming-mousepad.jpg",
     tite: "GAMING MOUSEPADS",
   },
   {
-    img:"/img2/logitech/imgi_8_gaming-keyboard.jpg",
+    img:"img2/logitech/imgi_8_gaming-keyboard.jpg",
     tite: "GAMING KEYBOARDS",
   },
   {
-    img:"/img2/logitech/imgi_9_gaming-headsets-audio.jpg",
+    img:"img2/logitech/imgi_9_gaming-headsets-audio.jpg",
     tite: "GAMING HEADSETS & AUDIO",
   },
 ];
@@ -177,18 +177,18 @@ if (slids) {
 }
 
 const cardss = [
-  { img:"/img2/logitech/shop-1.png", title: "RACING WHEELS" },
-  { img:"/img2/logitech/shop-2.png", title: "SPACE, FLIGHT, FARM SIM GEAR" },
-  { img:"/img2/logitech/shop-3.png", title: "MICROPHONES" },
-  { img:"/img2/logitech/shop-4.png", title: "CAMERAS & LIGHTING" },
-  { img:"/img2/logitech/shop-5.png", title: "GAMING MOUSEPADS" },
-  { img:"/img2/logitech/shop-6.png", title: "GAMING HEADSETS & AUDIO" },
-  { img:"/img2/logitech/shop-1.png", title: "CLOUD GAMING" },
-  { img:"/img2/logitech/shop-7.png", title: "GAMEPADS & CONTROLLERS" },
-  { img:"/img2/logitech/shop-8.png", title: "SIM RACING SEATS" },
-  { img:"/img2/logitech/shop-9.png", title: "GAMING MICE" },
-  { img:"/img2/logitech/shop-10.png", title: "GAMING KEYBOARDS" },
-  { img:"/img2/logitech/shop-11.png", title: "GAMING ACCESSORIES" },
+  { img:"img2/logitech/shop-1.png", title: "RACING WHEELS" },
+  { img:"img2/logitech/shop-2.png", title: "SPACE, FLIGHT, FARM SIM GEAR" },
+  { img:"img2/logitech/shop-3.png", title: "MICROPHONES" },
+  { img:"img2/logitech/shop-4.png", title: "CAMERAS & LIGHTING" },
+  { img:"img2/logitech/shop-5.png", title: "GAMING MOUSEPADS" },
+  { img:"img2/logitech/shop-6.png", title: "GAMING HEADSETS & AUDIO" },
+  { img:"img2/logitech/shop-1.png", title: "CLOUD GAMING" },
+  { img:"img2/logitech/shop-7.png", title: "GAMEPADS & CONTROLLERS" },
+  { img:"img2/logitech/shop-8.png", title: "SIM RACING SEATS" },
+  { img:"img2/logitech/shop-9.png", title: "GAMING MICE" },
+  { img:"img2/logitech/shop-10.png", title: "GAMING KEYBOARDS" },
+  { img:"img2/logitech/shop-11.png", title: "GAMING ACCESSORIES" },
 ];
 
 const mycards = document.querySelector(".mycards3");
@@ -213,17 +213,17 @@ if (mycards) {
 
 const cards = [
   {
-    img:"/img2/logitech/imgi_22_play-for-the-breakthroughs-card-new.jpg",
+    img:"img2/logitech/imgi_22_play-for-the-breakthroughs-card-new.jpg",
     title: "PLAY FOR THE BREAKTHROUGHS",
     desc:"The thrill, the win, the culture. No matter why you play, Logitech G has the gear to help you hit your next breakthrough. And when you hit it - KEEP PLAYING."
   },
   {
-    img:"/img2/logitech/imgi_23_g-challenge-card.jpg",
+    img:"img2/logitech/imgi_23_g-challenge-card.jpg",
     title: "G CHALLENGE",
     desc:"Start your engines! The Logitech McLaren G Challenge returns to Forza Motorsport this Summer on Xbox and PC! Set your fastest lap in person for your chance to win cash and prizes, including a VIP Travel Experience to the McLaren Technology Centre."
   },
   {
-    img:"/img2/logitech/imgi_24_ghub-basics-card.jpg",
+    img:"img2/logitech/imgi_24_ghub-basics-card.jpg",
     title: "G HUB BASICS",
     desc:"Set your DPI, make your first assignment and try out some cool LIGHTSYNC effects. Take a hands on tour of the basics of G HUB."
   },

@@ -109,7 +109,7 @@ nav .num p {
 .sec-1 .bac-img {
     min-height: 400px;
     padding: 40px 20px; /* بادينج مرن للموبايل */
-    background-image: url(/img2/Deals/imgi_24_logitechg-deals-banner-generic-desktop.jpg);
+    background-image: url("../img2/Deals/imgi_24_logitechg-deals-banner-generic-desktop.jpg");
     background-size: cover;
     background-position: center;
     color: white;

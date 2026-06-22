@@ -450,7 +450,7 @@ nav .num p {
     background-size: cover;
     background-position: center; /* تضمن أن تتوسط الصورة الشاشة دائماً */
     background-repeat: no-repeat;
-    background-image: url('/img2/test/img-2.jpg'); /* كود آمن لكل المتصفحات */
+    background-image: url('../img2/test/img-2.jpg'); /* كود آمن لكل المتصفحات */
 }
 
 /* التنسيق الافتراضي (للموبايل والشاشات الصغيرة) */
@@ -766,7 +766,7 @@ nav .num p {
     color: white;
     background-size: cover;
     background-position: center; /* تضمن توسط الصورة دائمًا */
-    background-image: url('/img2/test/imgi_43_gaming-shop-ghub-banner-desktop.jpg'); /* دعم قياسي وآمن لجميع المتصفحات */
+    background-image: url('../img2/test/imgi_43_gaming-shop-ghub-banner-desktop.jpg'); /* دعم قياسي وآمن لجميع المتصفحات */
 }
 
 /* إدارة مرنة للنصوص بدلاً من الـ width الثابت */
