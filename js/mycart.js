@@ -19,7 +19,19 @@ cardlenth();
 const mycarts =document.querySelector(".mycarts-1")
 function carts() {
     mycarts.innerHTML = "";
-    card.forEach((el, endix) => {
+    
+        if (card.length=== 0) {
+        mycarts.innerHTML = `
+        <div class="empty-cart" style="text-align: center; padding: 59px 20px;">
+            <h3 class="mb-4">Your shopping cart is empty</h3>
+            <p class="mb-4">It looks like you haven't added any products yet.</p>
+            <a href="shop.html" class="btn-shop" style="text-decoration: none; background: #000; color: #fff; padding: 12px 30px; border-radius: 30px;">Browse products</a>
+        </div>
+        `;
+    }
+    
+    else {
+        card.forEach((el, endix) => {
 mycarts.innerHTML += `
 <div class="mycard1">
     <div class="myimg2">
@@ -48,6 +60,7 @@ mycarts.innerHTML += `
 </div>
 `;
     });
+    }
 }
 
 carts();
@@ -74,29 +87,10 @@ function dele(myindx) {
 }
 
 
-function dele(myindx) {
-      if (card[myindx].proQty === 1) {
-    delet(myindx);
-  carts();
-  cardlenth();
 
-   }
-   else{
-    card[myindx].proQty--;
-    console.log(card[myindx].proQty);
-        //   console.log(card[myindx].proQty);
-
-    
-            localStorage.setItem("itm", JSON.stringify(card));
-
-     carts();
-
-   }
-
-}
 function delet(indx) {
     card.splice(indx , 1);
-    //    localStorage.setItem("cards",JSON.stringify(card))||[];
+    localStorage.setItem("itm", JSON.stringify(card));
 
     carts();
     cardlenth();

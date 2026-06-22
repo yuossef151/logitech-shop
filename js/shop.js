@@ -36,7 +36,7 @@ const slidArr2 = [
   {
     img: "img2/test/shop-4.png",
     tite: "Gaming Headsets & Audio",
-    href: "/HEADSETS .html",
+    href: "/HEADSETS.html",
   },
   {
     img: "img2/test/shop-5.png",

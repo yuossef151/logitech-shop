@@ -129,14 +129,17 @@ const slid = document.querySelector(".slids");
 if (slid) {
   slidArr.map((el, indx) => {
     slid.innerHTML += `
-      <div class="swiper-slide slid px-4">
+    <div class="swiper-slide slid px-4">
+    <a href="${el.href2 || '#'}">
         <div class="slid2">
           <img class="pb-3" src="${el.img}" alt="">
           <h4>${el.tite}</h4>
           <p class="py-3">${el.titletow}</p>
-          <a href="${el.href2 || '#'}"><span>${el.href}</span> <div class="bord"></div></a>
+          <span>${el.href}</span> <div class="bord"></div>
         </div>
+        <a/>
       </div>
+
     `;
   });
 }
