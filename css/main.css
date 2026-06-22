@@ -1,0 +1,1226 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+
+html{
+  overflow-x: hidden;
+}
+
+
+/* تنسيقات الـ Navbar العامة والمتجاوبة */
+.navbar {
+  border-bottom: 1px solid #1c1c1c;
+  background-color: #000000 !important;
+}
+
+.navbar-nav .nav-link {
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-item {
+  border-bottom: solid 3px transparent;
+}
+
+.navbar-nav .nav-item:hover {
+  border-bottom: solid 3px rgb(0, 153, 255);
+}
+
+.myimg svg {
+  color: white !important;
+  fill: white !important;
+  cursor: pointer;
+}
+
+/* تنسيق البحث المرن */
+.serch {
+  border-radius: 20px;
+  padding: 0 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 36px;
+}
+
+.serch input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  width: 110px;
+  font-size: 13px;
+}
+
+/* تثبيت دائرة إشعار السلة بشكل صحيح تماماً فوق الأيقونة */
+nav .num {
+  background-color: #0099ff;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  color: black;
+  pointer-events: none;
+}
+
+nav .num p {
+  font-size: 10px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* تعديلات الميديا كويري لتصحيح وضع الموبايل والتابلت */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #080808;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+    border: 1px solid #1f1f1f;
+  }
+  .navbar-nav {
+    align-items: flex-start !important;
+    gap: 10px;
+  }
+  .myimg {
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid #222;
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+  .serch {
+    width: 45%;
+  }
+  .serch input {
+    width: 100%;
+  }
+}
+/* -------------------------- */
+
+
+/* تنسيقات الـ Hero والـ Video الأساسية */
+.herosec {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000;
+}
+
+.z-index-content {
+  z-index: 3;
+}
+
+/* تثبيت الفيديو كخلفية حقيقية متجاوبة بدون استخدام الأبعاد السالبة */
+.myvideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.myvideo video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* تنسيقات كتل النصوص وعناصر الـ G5 */
+.G5 {
+  color: white;
+  padding-top: 80px;
+  position: relative;
+}
+
+.G5 span {
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 10px;
+  color: #0099ff;
+}
+
+.G5 h1 {
+  font-size: clamp(2.5rem, 6vw, 80px); /* حجم خط ديناميكي يصغر في الموبايل ويكبر في الشاشات الكبيرة */
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.G5 p {
+  font-size: 16px;
+  width: 100%;
+  max-width: 500px; /* بدلاً من الـ % الثابتة التي تسبب انضغاط النص في الموبايل */
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 25px;
+}
+
+.G5 button {
+  color: black !important;
+  font-weight: bold;
+  border-radius: 35px;
+  padding: 10px 35px;
+  background-color: #0099ff !important;
+  border: none;
+  transition: .3s;
+}
+
+.G5 button:hover {
+  background-color: #007acc !important;
+  transform: scale(1.05);
+}
+
+/* الكروت الأربعة مع الحفاظ الكامل على خلفيات صورك الأصلية */
+.row a {
+  text-decoration: none;
+  color: white;
+}
+
+.img1, .img2, .img3, .img4 {
+  width: 100%;
+  height: 140px;
+  padding: 15px;
+  display: flex;
+  align-items: flex-end;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  border-radius: 6px;
+}
+
+.img1 {
+  background-image: image-set(url(/img2/logitech/imgi_44_logitechg-g522-lightspeed-hpb-thumbnail.jpg));
+  border: solid 1px #0099ff;
+}
+
+.img2 {
+  border: solid 1px #28292a;
+  background-image: image-set(url(/img2/logitech/imgi_46_logitechg-play-hpb-thumbnail.jpg));
+}
+
+.img3 {
+  border: solid 1px #28292a;
+  background-image: image-set(url(/img2/logitech/imgi_48_logitechg-g-cloud-black-hpb-thumbnail.jpg));
+}
+
+.img4 {
+  border: solid 1px #28292a;
+  background-image: image-set(url(/img2/logitech/imgi_50_logitechg-sim-series-hpb-thumbnail.jpg));
+}
+
+/* تأثير الـ Hover الأصلي الخاص بك (معالجة الحركة للأعلى بسلاسة) */
+.img1:hover, .img2:hover, .img3:hover, .img4:hover {
+  transform: translateY(-10px);
+  border-color: #0099ff;
+}
+
+/* الميديا كويري لضبط الأبعاد على الموبايل والشاشات الصغيرة */
+@media (max-width: 991.98px) {
+  .herosec {
+    min-height: 110vh; /* زيادة الارتفاع الكلي لأن الكروت تترتب عمودياً */
+  }
+  .G5 {
+    padding-top: 40px;
+  }
+}
+
+
+/* ------------------ */
+
+
+
+
+/* تنسيقات الحاوية الرئيسية */
+.sec-2 {
+  background-color: #000000;
+  padding: 40px 20px; /* مسافات داخلية مرنة بدلاً من الثابتة */
+}
+
+@media (min-width: 768px) {
+  .sec-2 {
+    padding: 60px 60px;
+  }
+}
+
+/* تنسيقات كروت الـ Swiper والارتفاعات */
+.swiper-slide {
+  min-height: 450px;
+  height: auto;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* الحفاظ على خلفيات الصور المحددة برمجياً */
+.swiper-slide.imgs1 {
+  background-image: image-set(url(/img2/logitech/imgi_52_end-of-summer-sale-promo-slide-banner-desktop.jpg));
+}
+
+.swiper-slide.imgs2 {
+  background-image: image-set(url(/img2/logitech/imgi_53_logitech-g-slideshow-student-discount-desktop.jpg));
+}
+
+.swiper-slide.imgs3 {
+  background-image: image-set(url(/img2/logitech/imgi_54_logitechg-slideshow-sim-racing-desktop-2.jpg));
+}
+
+/* التحكم التلقائي بالنصوص داخل السلايدات لتفادي الكسر */
+.text {
+  color: #000000;
+  max-width: 600px;
+}
+
+.text2 {
+  color: #ffffff;
+  max-width: 600px;
+}
+
+.slide-title-custom {
+  max-width: 350px; /* بدلاً من w-25 الصارمة في الشاشات الصغيرة */
+}
+
+.swiper-slide h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.swiper-slide p {
+  font-size: clamp(14px, 1.5vw, 16px);
+  width: 100% !important; /* إلغاء الـ 50% لمنع الانضغاط النصي على الموبايل */
+}
+
+.desc-text {
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.sub-title {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.small-text {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+/* تنسيق أزرار روابط الـ CTA */
+.swiper-slide button {
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 700;
+  background-color: #007aff !important;
+  transition: transform 0.2s ease;
+}
+
+.swiper-slide button a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.swiper-slide button:hover {
+  transform: scale(1.03);
+}
+
+.text button {
+  background-color: #000000 !important;
+}
+.text button a {
+  color: #ffffff !important;
+}
+
+/* تنسيق الـ Pagination المتجاوبة عريضاً */
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: #555860;
+  width: 30%;
+  max-width: 120px;
+  height: 3px;
+  border-radius: 0;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #007aff !important;
+}
+
+/* منطقة أزرار التحرك والـ Navigation */
+.LF-container {
+  position: relative;
+  width: 100%;
+}
+
+.buttons-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 80px;
+  height: 30px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  margin: 0 !important;
+  color: #ffffff !important;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 16px !important;
+  font-weight: 900;
+}
+
+/* إخفاء الأزرار عند التعطيل تماماً لتطابق خصائصك */
+.swiper-button-disabled {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+.shop-NOW h3 {
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-weight: 700;
+}
+
+
+
+
+
+/* --------------------------------------------- */
+
+
+
+
+/* تنسيق سيكشن SHOP OUR SERIES */
+.sec-3 {
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.sec-3 h2 {
+  font-size: clamp(1.8rem, 4vw, 40px); /* حجم خط ديناميكي متجاوب */
+  font-weight: 700;
+  color: white;
+  padding-bottom: 30px;
+}
+
+/* حاوية السلايدر لضبط تموضع الأزرار يميناً ويساراً تلقائياً */
+.swiper-container-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.mySwipers {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.slids {
+  height: auto; /* ترك الارتفاع مرن بناءً على محتوى الكروت */
+  min-height: 520px;
+}
+
+/* تنسيق السلايد والكروت الداخلية */
+.slid .slid2 {
+  height: 100%;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+}
+
+.slid img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10; /* يحافظ على نسبة أبعاد ثابتة للصور منعا للتمطيط */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.slid h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.slid p {
+  width: 100%;
+  font-size: 14px;
+  color: #b3b3b3;
+  line-height: 1.5;
+  flex-grow: 1; /* يضمن توزيع متساوي للمساحات حتى لو اختلفت أطوال النصوص */
+}
+
+.slid a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+/* تعديل أزرار الـ Navigation لتصبح ريسبونسف 100% دون بكسل ثابت */
+.clr1, .clr {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute !important;
+  top: 40% !important; /* يتوسط عمودياً بالنسبة لطول الصورة والكارت */
+  transform: translateY(-50%);
+  z-index: 99;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+/* التموضع الذكي يميناً ويساراً */
+.clr1 {
+  right: -15px !important;
+  left: auto !important;
+}
+
+.clr {
+  left: -15px !important;
+  right: auto !important;
+}
+
+.clr1:hover, .clr:hover {
+  background-color: #0099ff !important;
+}
+
+.clr1:hover:after, .clr:hover:after {
+  color: #ffffff !important;
+}
+
+/* تكييف الأيقونات الداخلية للأزرار */
+.clr1:after, .clr:after {
+  font-family: swiper-icons;
+  font-size: 16px !important;
+  font-weight: 900;
+  color: #000000;
+}
+
+
+/* تنسيق الدوائر البيضاء للأزرار وتوسيطها عمودياً */
+.clr1.next-series, .clr.prev-series {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: absolute !important;
+  top: 40% !important; /* تتوسط الكروت عمودياً بناءً على ارتفاع الصور */
+  transform: translateY(-50%);
+  z-index: 99;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* زر التالي يميناً وزر السابق يساراً بشكل متجاوب */
+.clr1.next-series {
+  right: 0px !important;
+  left: auto !important;
+}
+
+.clr.prev-series {
+  left: 0px !important;
+  right: auto !important;
+}
+
+/* طباعة شكل السهم الداخلي الافتراضي لـ Swiper باللون الأسود */
+.clr1.next-series:after, .clr.prev-series:after {
+  font-family: 'swiper-icons' !important;
+  font-size: 18px !important;
+  font-weight: 900;
+  color: #000000 !important;
+  display: block;
+}
+
+.clr1.next-series:after {
+  content: 'next' !important;
+}
+
+.clr.prev-series:after {
+  content: 'prev' !important;
+}
+
+.clr1.next-series:hover, .clr.prev-series:hover {
+  background-color: #0099ff !important;
+}
+.clr1.next-series:hover:after, .clr.prev-series:hover:after {
+  color: #ffffff !important;
+}
+/* إخفاء الأزرار الميتة أو عند نهاية السلايد */
+.swiper-button-disabled {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+/* إخفاء الأزرار تماماً في الشاشات الصغيرة جداً والاعتماد على السحب باليد */
+@media (max-width: 767.98px) {
+  .clr1.next-series, .clr.prev-series {
+    display: none !important;
+  }
+}
+
+
+
+/* --------------------------- */
+
+
+/* تنسيق سيكشن ADVANCED GAMING GEAR */
+.sec-4 {
+  background-color: #000000;
+  color: white;
+  padding-top: 90px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.sec-4 h5 {
+  font-size: clamp(1.5rem, 3vw, 32px);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.sec-4 p {
+  color: #b3b3b3;
+  font-size: 15px;
+}
+
+/* تنسيق الكروت الجديد (بدون تداخل مع كلاسات Bootstrap) */
+.gear-card {
+  position: relative;
+  overflow: hidden;
+  background-color: #1a1a1a;
+  height: 520px; /* طول متناسق ومناسب للشاشات */
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-slids a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+/* الصورة بداخل الكارت */
+.gear-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* يملأ الكارت بشكل أنيق */
+  transition: transform 0.5s ease;
+}
+
+/* تكبير الصورة عند تمرير الماوس */
+.gear-card:hover img {
+  transform: scale(1.08);
+}
+
+/* الكلمة أو التسمية بداخل الكارت */
+.gear-card .label {
+  position: absolute;
+  bottom: 60px;
+  left: 25px;
+  color: white;
+  z-index: 2;
+}
+
+.gear-card .label h5 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* إضاءة تدرجية سوداء خفيفة أسفل الكارت ليظهر النص بوضوح */
+.gear-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* تنسيق أزرار التنقل المخصصة والذكية ريسبونسف بدون بكسل ثابت */
+.clr1.next-gear, .clr.prev-gear {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%);
+  z-index: 99;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.clr1.next-gear {
+  right: -20px !important;
+  left: auto !important;
+}
+
+.clr.prev-gear {
+  left: -20px !important;
+  right: auto !important;
+}
+
+/* طباعة السهم الداخلي لـ Swiper */
+.clr1.next-gear:after, .clr.prev-gear:after {
+  font-family: 'swiper-icons' !important;
+  font-size: 18px !important;
+  font-weight: 900;
+  color: #000000 !important;
+}
+
+.clr1.next-gear:after { content: 'next' !important; }
+.clr.prev-gear:after { content: 'prev' !important; }
+
+.clr1.next-gear:hover, .clr.prev-gear:hover {
+  background-color: #0099ff !important;
+}
+.clr1.next-gear:hover:after, .clr.prev-gear:hover:after {
+  color: #ffffff !important;
+}
+
+/* إخفاء الأزرار تلقائياً في نهاية السلايدر وعلى الموبايل */
+.swiper-button-disabled {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+/* تنسيق الدوائر البيضاء للأزرار وتوسيطها عمودياً */
+.clr1.next-gear, .clr.prev-gear {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%);
+  z-index: 99;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  
+  /* تنسيق السهم النصي الداخلي */
+  color: #000000 !important;
+  font-size: 22px !important;
+  font-weight: bold !important;
+  line-height: 1;
+}
+
+/* زر التالي يميناً وزر السابق يساراً بشكل متجاوب */
+.clr1.next-gear {
+  right: 0px !important;
+  left: auto !important;
+}
+
+.clr.prev-gear {
+  left: 0px !important;
+  right: auto !important;
+}
+
+/* تأثير حركي عند تمرير الماوس فوق الدائرة البيضاء */
+.clr1.next-gear:hover, .clr.prev-gear:hover {
+  background-color: #0099ff !important;
+  color: #ffffff !important; /* يتحول السهم النصي للأبيض عند الـ Hover */
+}
+
+/* إخفاء الزر تلقائياً إذا وصلنا لنهاية الكروت */
+.swiper-button-disabled {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+/* إخفاء الأزرار على الشاشات الصغيرة جداً والاعتماد على السحب باللمس */
+@media (max-width: 767.98px) {
+  .clr1.next-gear, .clr.prev-gear {
+    display: none !important;
+  }
+}
+
+
+
+
+/* ------------------ */
+
+/* تنسيق سيكشن التسوق حسب الفئات */
+.sec-5 {
+  background-color: #ffffff;
+  color: #000000;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.sec-5 h3 {
+  font-size: clamp(1.5rem, 2.5vw, 28px);
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+/* تنسيق الكارت الخاص بالفئة */
+.my-card {
+  background-color: #f4f4f4; /* لون خلفية رمادي فاتح وناعم بدلاً من الـ ccc الغامق */
+  height: 250px;
+  border-radius: 8px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.my-card:hover {
+  background-color: #ebebeb;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.my-card a {
+  text-decoration: none;
+  color: #000000 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+/* حاوية الصورة لضمان عدم خروجها عند عمل Zoom */
+.my-card .img-container {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* يمنع امتداد الصورة خارج الكارت عند الـ hover */
+}
+
+.my-card img {
+  max-width: 85%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* تكبير الصورة بسلاسة عند تمرير الماوس */
+.my-card:hover img {
+  transform: scale(1.15);
+}
+
+/* تنسيق عنوان الفئة */
+.my-card p {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding-top: 10px;
+  width: 90%;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* ------------------------ */
+
+
+/* تنسيق السيكشن السادس */
+.sec-6 {
+  background-color: #000000;
+  color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.sec-6 h3 {
+  font-size: clamp(1.5rem, 2.5vw, 28px);
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.sec-6 p {
+  color: #b3b3b3;
+  max-width: 700px;
+}
+
+/* حاوية الكارت الأساسية */
+.my-cards2 {
+  background-color: #111111;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.my-cards2 a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* صندوق الصورة الممسك بالخطوط */
+.my-cards2 .img-box {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.my-cards2 .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* تكبير الصورة عند الهفر */
+.my-cards2:hover .img-box img {
+  transform: scale(1.05);
+}
+
+/* حاوية النصوص أسفل الصورة */
+.cardtitle {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-grow: 1;
+}
+
+.cardtitle h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.cardtitle p {
+  font-size: 14px;
+  color: #aaaaaa;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* إعدادات حركة الخطوط المودرن في الزاوية العلوية اليمنى للصورة تلقائياً */
+.brdrs {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  z-index: 5;
+}
+
+/* الخط الأفقي */
+.brdrs .brdr1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.4s ease;
+}
+
+/* الخط الرأسي */
+.brdrs .brdr2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 0%;
+  background-color: #ffffff;
+  transition: height 0.4s ease;
+}
+
+/* تفعيل الأنيميشن للخطوط عند الهفر بشكل مرن وثابت */
+.my-cards2:hover .brdr1 {
+  width: 100%;
+}
+
+.my-cards2:hover .brdr2 {
+  height: 100%;
+}
+
+
+
+
+/* -------------------------- */
+
+
+/* الخلفية العامة للسيكشن */
+.sec-7 {
+  background-color: #000000;
+  overflow: hidden;
+}
+
+/* تنسيق العنوان الجانبي ووصفه */
+.sec-7 .section-title {
+  font-size: clamp(2rem, 3.5vw, 42px);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.sec-7 .section-title span {
+  color: #007aff;
+}
+
+.sec-7 .section-desc {
+  color: #b3b3b3 !important;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* تنسيق كروت المميزات */
+.my-cards6 {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.my-cards6 img {
+  width: auto;
+  height: 35px;
+  max-width: 70px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.my-cards6 h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  padding: 15px 0 10px 0;
+  letter-spacing: 0.5px;
+}
+
+.my-cards6 p {
+  color: #aaaaaa;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* تنسيق الروابط والـ Hover الذكي */
+.my-cards6 a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 8px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  width: fit-content;
+}
+
+
+.my-cards6 .bord {
+  width: 40px;
+  height: 3px;
+  background-color: #0099ff;
+  border-radius: 3px;
+  transition: width 0.3s ease; 
+}
+
+
+.my-cards6 a:hover {
+text-decoration: underline;
+}
+
+.my-cards6 a:hover .bord {
+  width: 20px;
+}
+
+
+.see-All {
+  margin-top: 80px;
+  border-top: 1px solid #222;
+  padding-top: 30px !important;
+}
+
+.see-All span {
+  color: #888888;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.see-All p {
+  padding-top: 8px;
+  font-size: 12px;
+  color: #666666 !important;
+  line-height: 1.6;
+}
+
+.see-All a {
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: underline; 
+    margin-left: 5px;
+}
+.see-All a:hover {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+}
+
+
+/* ----------------------------------- */
+
+
+
+/* التنسيق الأساسي للـ Footer */
+footer {
+  background-color: #000000;
+  border-top: solid 1px #1a1a1a;
+}
+
+/* تنسيق قوائم الروابط */
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+footer ul a {
+  color: #888888 !important;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer ul a:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+/* الصف السفلي الفاصل */
+footer .myrow-1 {
+  border-top: solid 1px #28292a;
+}
+
+/* لوجو السيكشن السفلي */
+footer .logo-2 {
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+}
+
+/* أيقونات التواصل الاجتماعي */
+.icons .social-icon {
+  color: #888888;
+  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #111111;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.icons .social-icon:hover {
+  color: #ffffff;
+  background-color: #007aff;
+}
+
+/* جزء اللغة والمنطقة الجغرافية */
+footer .icon p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #888888;
+  font-size: 13px;
+}
+
+footer .icon p svg {
+  color: #888888;
+  transition: color 0.2s ease;
+}
+
+footer .icon p a {
+  color: #888888 !important;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+/* تأثير الـ Hover على اختيار المنطقة */
+footer .icon p:hover a, 
+footer .icon p:hover stroke {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+footer .icon p:hover svg {
+  color: #ffffff;
+}

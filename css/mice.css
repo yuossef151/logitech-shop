@@ -1,0 +1,414 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+  overflow-x: hidden;
+}
+
+/* تنسيقات الـ Navbar العامة والمتجاوبة */
+.navbar {
+  border-bottom: 1px solid #1c1c1c;
+  background-color: #000000 !important;
+}
+
+.navbar-nav .nav-link {
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-item {
+  border-bottom: solid 3px transparent;
+}
+
+.navbar-nav .nav-item:hover {
+  border-bottom: solid 3px rgb(0, 153, 255);
+}
+
+.myimg svg {
+  color: white !important;
+  fill: white !important;
+  cursor: pointer;
+}
+
+/* تنسيق البحث المرن */
+.serch {
+  border-radius: 20px;
+  padding: 0 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 36px;
+}
+
+.serch input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  width: 110px;
+  font-size: 13px;
+}
+
+/* تثبيت دائرة إشعار السلة بشكل صحيح تماماً فوق الأيقونة */
+nav .num {
+  background-color: #0099ff;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  color: black;
+  pointer-events: none;
+}
+
+nav .num p {
+  font-size: 10px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* تعديلات الميديا كويري لتصحيح وضع الموبايل والتابلت */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #080808;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+    border: 1px solid #1f1f1f;
+  }
+  .navbar-nav {
+    align-items: flex-start !important;
+    gap: 10px;
+  }
+  .myimg {
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid #222;
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+  .serch {
+    width: 45%;
+  }
+  .serch input {
+    width: 100%;
+  }
+}
+
+/* ----------------------------- */
+    .Deals {
+    display: flex;
+    flex-wrap: wrap; /* يسمح بالالتفاف في الشاشات الصغيرة جداً */
+    justify-content: space-between;
+    align-items: center; /* لمحاذاة النص والأيقونات في المنتصف عمودياً */
+    padding-bottom: 1rem;
+}
+
+.Deals div {
+    display: flex;
+    align-items: center; /* محاذاة الروابط مع الأيقونات */
+    gap: 5px; /* مسافة بسيطة وموحدة بين كل عنصر والآخر */
+}
+
+.Deals p{
+  margin:0;
+}
+
+.Deals a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.Deals a:hover {
+    text-decoration: underline;
+}
+
+    .Deals svg {
+        color: #7c7c7c;
+    }
+
+    
+    .bac-img {
+    height: 300px; /* تقليل الطول في الموبايل */
+    position: relative;
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.bac-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* لضمان عدم تشوه الصورة */
+}
+.bac-title {
+    position: absolute;
+    top: 20%; /* تعديل الموقع في الموبايل */
+    left: 20px;
+    width: 90%; /* عرض النص ليأخذ مساحة مناسبة */
+}
+.sec-2 {
+    padding: 2rem !important; /* تقليل البادنج في الموبايل */
+}
+
+
+.card {
+    background-color: #EAEBED;
+    border: none;
+    transition: 0.3s;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.card:hover {
+    box-shadow: 0 10px 20px rgba(27, 26, 26, 0.66);
+}
+.card img {
+    height: 200px;
+    object-fit: contain;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card-text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.card-text p{
+    font-size: 13px;
+}
+.slry{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 7px;
+}
+.slry span{
+    font-weight: 600;
+}
+.slry del{
+    font-weight: 400;
+    color: #404040;
+}
+.card:hover.card img{
+    transition: .5s;
+transform: scale(1.1);
+
+
+}
+.addtocard{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.addtocard a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.off{
+    color: green;
+    font-weight: 700;
+}
+.addtocard svg {
+    margin: 0px 0 0 0px;
+    margin-left: 5px;
+}
+
+
+
+
+.heart {
+    cursor: pointer;
+    transition: 0.3s;
+    width: 50px;
+    height: 50px;
+  border: none;
+  background-color: transparent;
+  margin: 20px 0 0 20px;
+}
+.myheart{
+      fill: rgba(255, 0, 0, 0) !important;
+ stroke: black;     
+  stroke-width: 2;
+        background-color: transparent;
+
+}
+.myheart.liked {
+  color: black;
+  fill: black !important;
+}
+
+
+
+
+/* تنسيق الزر الجديد */
+.add {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 2px solid #000 !important;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.add:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.add svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+}
+/* إصلاح التوزيع داخل الكارت */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .bac-title {
+        left: 20px;
+        width: 90%;
+        top: 20%;
+    }
+}
+
+@media (min-width: 992px) {
+    .sec-2 {
+        padding: 3rem !important;
+    }
+    .bac-img {
+        height: 478.43px; /* الطول الأصلي للشاشات الكبيرة */
+    }
+    .bac-title {
+        top: 40%;
+        width: 47%;
+    }
+}
+/* ----------------------------- */
+
+
+/* التنسيق الأساسي للـ Footer */
+footer {
+  background-color: #000000;
+  border-top: solid 1px #1a1a1a;
+}
+
+/* تنسيق قوائم الروابط */
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+footer ul a {
+  color: #888888 !important;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer ul a:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+/* الصف السفلي الفاصل */
+footer .myrow-1 {
+  border-top: solid 1px #28292a;
+}
+
+/* لوجو السيكشن السفلي */
+footer .logo-2 {
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+}
+
+/* أيقونات التواصل الاجتماعي */
+.icons .social-icon {
+  color: #888888;
+  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #111111;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.icons .social-icon:hover {
+  color: #ffffff;
+  background-color: #007aff;
+}
+
+/* جزء اللغة والمنطقة الجغرافية */
+footer .icon p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #888888;
+  font-size: 13px;
+}
+
+footer .icon p svg {
+  color: #888888;
+  transition: color 0.2s ease;
+}
+
+footer .icon p a {
+  color: #888888 !important;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+/* تأثير الـ Hover على اختيار المنطقة */
+footer .icon p:hover a, 
+footer .icon p:hover stroke {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+footer .icon p:hover svg {
+  color: #ffffff;
+}

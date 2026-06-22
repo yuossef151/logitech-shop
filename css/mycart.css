@@ -1,0 +1,318 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+/* تنسيقات الـ Navbar العامة والمتجاوبة */
+.navbar {
+  border-bottom: 1px solid #1c1c1c;
+  background-color: #000000 !important;
+}
+
+.navbar-nav .nav-link {
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-item {
+  border-bottom: solid 3px transparent;
+}
+
+.navbar-nav .nav-item:hover {
+  border-bottom: solid 3px rgb(0, 153, 255);
+}
+
+.myimg svg {
+  color: white !important;
+  fill: white !important;
+  cursor: pointer;
+}
+
+/* تنسيق البحث المرن */
+.serch {
+  border-radius: 20px;
+  padding: 0 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 36px;
+}
+
+.serch input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  width: 110px;
+  font-size: 13px;
+}
+
+/* تثبيت دائرة إشعار السلة بشكل صحيح تماماً فوق الأيقونة */
+nav .num {
+  background-color: #0099ff;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  color: black;
+  pointer-events: none;
+}
+
+nav .num p {
+  font-size: 10px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* تعديلات الميديا كويري لتصحيح وضع الموبايل والتابلت */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #080808;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+    border: 1px solid #1f1f1f;
+  }
+  .navbar-nav {
+    align-items: flex-start !important;
+    gap: 10px;
+  }
+  .myimg {
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid #222;
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+  .serch {
+    width: 45%;
+  }
+  .serch input {
+    width: 100%;
+  }
+}
+
+
+
+/* ----------------------------- */
+
+
+/* تنسيق السكشن الأساسي */
+.sec-1 { padding: 40px 0; }
+
+/* البطاقة الرئيسية للمنتج */
+.mycard1 {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+/* الصورة */
+.myimg2 {
+    width: 150px;
+    height: 120px;
+    flex-shrink: 0;
+}
+.myimg2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* حاوية البيانات */
+.mycard {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+/* تفاصيل المنتج (الاسم والعداد) */
+.card1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* العداد */
+.numofcart {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 5px 15px;
+    gap: 15px;
+    width: fit-content;
+}
+
+/* السعر وزر الحذف في اليمين */
+.card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.card2 h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* الأزرار والنصوص */
+.mbtn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    background: none;
+    border: none;
+}
+
+.mbtn:hover { color: #dc3545; }
+
+.remove-text {
+    color: #666;
+    font-size: 13px;
+    padding: 5px 0;
+}
+
+
+.cart-content {
+    display: flex;
+    justify-content: space-between; /* التوزيع المتباعد */
+    align-items: center; /* محاذاة في المنتصف */
+    width: 100%;
+    padding: 0 0px;
+}
+.sec-1 p { margin: 0; }
+
+@media (max-width: 768px) {
+    .mycard1 {
+        padding: 10px;
+        gap: 4px; 
+    }
+    .cart-content {
+        gap: 4px; /* الجاب المطلوب 4px */
+    }
+}
+
+/* ----------------------------- */
+
+
+/* التنسيق الأساسي للـ Footer */
+footer {
+  background-color: #000000;
+  border-top: solid 1px #1a1a1a;
+}
+
+/* تنسيق قوائم الروابط */
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+footer ul a {
+  color: #888888 !important;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer ul a:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+/* الصف السفلي الفاصل */
+footer .myrow-1 {
+  border-top: solid 1px #28292a;
+}
+
+/* لوجو السيكشن السفلي */
+footer .logo-2 {
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+}
+
+/* أيقونات التواصل الاجتماعي */
+.icons .social-icon {
+  color: #888888;
+  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #111111;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.icons .social-icon:hover {
+  color: #ffffff;
+  background-color: #007aff;
+}
+
+/* جزء اللغة والمنطقة الجغرافية */
+footer .icon p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #888888;
+  font-size: 13px;
+}
+
+footer .icon p svg {
+  color: #888888;
+  transition: color 0.2s ease;
+}
+
+footer .icon p a {
+  color: #888888 !important;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+/* تأثير الـ Hover على اختيار المنطقة */
+footer .icon p:hover a, 
+footer .icon p:hover stroke {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+footer .icon p:hover svg {
+  color: #ffffff;
+}

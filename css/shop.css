@@ -1,0 +1,1007 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+html {
+    overflow-x: hidden;
+}
+
+/* تنسيقات الـ Navbar العامة والمتجاوبة */
+.navbar {
+  border-bottom: 1px solid #1c1c1c;
+  background-color: #000000 !important;
+}
+
+.navbar-nav .nav-link {
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-item {
+  border-bottom: solid 3px transparent;
+}
+
+.navbar-nav .nav-item:hover {
+  border-bottom: solid 3px rgb(0, 153, 255);
+}
+
+.myimg svg {
+  color: white !important;
+  fill: white !important;
+  cursor: pointer;
+}
+
+/* تنسيق البحث المرن */
+.serch {
+  border-radius: 20px;
+  padding: 0 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 36px;
+}
+
+.serch input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  width: 110px;
+  font-size: 13px;
+}
+
+/* تثبيت دائرة إشعار السلة بشكل صحيح تماماً فوق الأيقونة */
+nav .num {
+  background-color: #0099ff;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  color: black;
+  pointer-events: none;
+}
+
+nav .num p {
+  font-size: 10px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* تعديلات الميديا كويري لتصحيح وضع الموبايل والتابلت */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #080808;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+    border: 1px solid #1f1f1f;
+  }
+  .navbar-nav {
+    align-items: flex-start !important;
+    gap: 10px;
+  }
+  .myimg {
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid #222;
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+  .serch {
+    width: 45%;
+  }
+  .serch input {
+    width: 100%;
+  }
+}
+/* -------------------------- */
+
+
+
+.sec-1 {
+    background-color: #EAEBED;
+    padding: 20px 0;
+}
+
+.sec-1 a {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.sec-1 a:hover {
+    text-decoration: none;
+}
+
+/* تنسيق الكارت الموحد */
+.card-1 {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    gap: 15px;
+    height: 100%; /* عشان الكروت كلها تبقى طول واحد */
+}
+
+.card-1 p {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    color: #000;
+    line-height: 1.4;
+}
+
+/* تنسيق الأيقونات الموحد لحل مشاكل الأحجام المختلفة */
+.card-1 svg {
+    flex-shrink: 0; /* بيمنع الأيقونة إنها تصغر لو الكلام كتير */
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+
+/* ضبط حجم أيقونة لوجيتك الخاصة لأن أبعادها الأصلية مستطيلة */
+.CR-3 svg {
+    width: 65px;
+    height: auto;
+}
+
+/* فكرة الخط الفاصل الذكية بالـ CSS المتجاوب */
+@media (min-width: 992px) {
+    .feat-col {
+        border-right: 2px solid rgb(202 203 209);
+    }
+    /* إلغاء الخط من عند آخر كارت على اليمين */
+    .feat-col:last-child {
+        border-right: 0;
+    }
+}
+
+
+
+/* ----------------------------- */
+
+
+
+.sec-2 {
+    background-color: white;
+}
+
+.sec-2 h2.section-main-title {
+    font-size: calc(2.5rem + 1.5vw); /* حجم خط متجاوب بدلاً من 68px الثابتة */
+    font-weight: 600;
+}
+
+/* تنسيق السلايد الفردي */
+.myimg-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.my-img {
+    background-color: #ebebeb;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* يضمن بقاء الدائرة منتظمة تماماً */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* تأثير الـ Hover الاحترافي */
+.myimg-5:hover .my-img img {
+    transform: scale(1.08);
+}
+
+.myslids-1 a {
+    color: #000;
+    text-decoration: none;
+}
+
+.myslids-1 h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* --- أزرار التحكم بالـ Swiper (التصميم المتجاوب الجديد) --- */
+.swiperBtn .clr1,
+.swiperBtn .clr {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: solid 2px #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%; /* لتتوسط السلايدر عمودياً بشكل تلقائي */
+    transform: translateY(-50%);
+    z-index: 99;
+    transition: all 0.3s ease;
+}
+
+/* التموضع الديناميكي بدلاً من البكسل الثابت */
+.swiperBtn .clr1 {
+    right: 10px;
+    left: auto;
+}
+
+.swiperBtn .clr {
+    left: 10px;
+}
+
+/* تأثير السهم عند التعطيل (تعديل الـ opacity الخطأ) */
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* تنسيق الأسهم الداخلية */
+.clr1.swiper-button-next:after,
+.clr.swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: 18px !important;
+    font-weight: 700;
+    color: #000000;
+}
+
+
+/* ----------------------------- */
+
+
+
+
+.sec-3 {
+    background-color: #fafafa;
+}
+
+.latest-main-title {
+    font-size: calc(2rem + 1.2vw);
+    font-weight: 700;
+    color: #000;
+}
+
+/* تنسيق حاوية الكارت الرئيسية */
+/* 1. تغيير خلفية الكارت إلى لون غامق ليظهر النص الأبيض بوضوح */
+.my-cards2 {
+    display: flex;
+    flex-direction: column;
+    background: #1a1a1a; /* خلفية رمادية غامقة جداً أو سوداء */
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* زيادة قوة الظل ليناسب الخلفية الغامقة */
+    transition: transform 0.3s ease;
+}
+
+/* 2. تغيير لون العنوان الصغير (العلامة التجارية أو السلسلة) */
+.cardtitle h6 {
+    font-size: 12px;
+    color: #b0b0b0; /* لون رمادي فاتح بدلاً من الرمادي الغامق */
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+/* 3. تغيير لون العنوان الرئيسي للكارت إلى الأبيض */
+.cardtitle h3 {
+    font-size: 20px;
+    color: #ffffff; /* أبيض صريح */
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* 4. تغيير لون نص الوصف (Description) إلى الأبيض أو رمادي فاتح جداً مريح للعين */
+.cardtitle p {
+    font-size: 14px;
+    color: #e0e0e0; /* رمادي فاتح جداً ليكون مريحاً في القراءة عن الأبيض الصريح */
+    line-height: 1.5;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* 5. تغيير لون السعر إلى الأبيض */
+.price-box span:first-child {
+    font-weight: 700;
+    color: #ffffff; /* السعر الحالي بالأبيض */
+    font-size: 16px;
+}
+
+/* 6. تغيير لون السعر المشطوب (القديم) */
+.price-box span del {
+    color: #888888; /* رمادي متوسط ليظهر أنه مخصوم */
+    font-size: 14px;
+}
+
+
+/* حاوية الصورة وتأثير الـ Hover */
+.img-container {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.my-cards2:hover .img-container img {
+    transform: scale(1.05);
+}
+
+/* تنسيق النصوص داخل الكارت */
+.cardtitle {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.cardtitle h6 {
+    font-size: 12px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.cardtitle h3 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.cardtitle p {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* لتوحيد السطور حتى لا تخرب التصميم */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* تنسيق الأسعار */
+.price-box {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price-box span:first-child {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.price-box span del {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* --- تنسيق أزرار التحكم لسكشن الـ Latest --- */
+.swiperBtn-latest .latest-next,
+.swiperBtn-latest .latest-prev {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: solid 1px #ddd;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 10;
+}
+
+.swiperBtn-latest .latest-next { right: 10px; }
+.swiperBtn-latest .latest-prev { left: 10px; }
+
+.swiperBtn-latest .latest-next:after,
+.swiperBtn-latest .latest-prev:after {
+    font-family: swiper-icons;
+    font-size: 16px !important;
+    font-weight: bold;
+    color: #000;
+}
+
+
+/* -------------------------- */
+
+
+.sec-4 .bac-img {
+    height: 500px; /* زودنا الارتفاع قليلاً ليعطي مساحة مريحة للنص */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-size: cover;
+    background-position: center; /* تضمن أن تتوسط الصورة الشاشة دائماً */
+    background-repeat: no-repeat;
+    background-image: url('/img2/test/img-2.jpg'); /* كود آمن لكل المتصفحات */
+}
+
+/* التنسيق الافتراضي (للموبايل والشاشات الصغيرة) */
+.sec-4 .bac-img h1 {
+    width: 100%;
+    max-width: 500px; /* يمنع العنوان من الامتداد الكامل بشكل مشوه */
+    font-weight: 700;
+    font-size: calc(1.8rem + 1vw); /* حجم خط متجاوب */
+    margin-bottom: 15px;
+}
+
+.sec-4 .bac-img p {
+    width: 100%;
+    max-width: 450px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* تنسيق الزر المخصص */
+.sec-4 .bac-img .btn-light-custom {
+    width: 200px;
+    border-radius: 40px;
+    padding: 12px 20px;
+    color: #000;
+    background-color: #ffffff;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.sec-4 .bac-img .btn-light-custom:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.03);
+}
+
+/* التحكم في الشاشات الكبيرة (شاشات اللابتوب والكمبيوتر) */
+@media (min-width: 992px) {
+    .sec-4 .bac-img h1 {
+        width: 35%; /* نسبة متوازنة للشاشات الكبيرة */
+    }
+
+    .sec-4 .bac-img p {
+        width: 30%;
+    }
+}
+
+/* -------------------------- */
+
+
+/* الحاوية الرئيسية للسيكشن */
+.gear-series-section {
+    background-color: #f8f9fa; /* خلفية رمادية فاتحة جداً تبرز الكروت البيضاء */
+    padding: 60px 0;
+}
+
+.gear-series-section .series-main-title {
+    font-size: calc(1.8rem + 1.2vw);
+    font-weight: 700;
+    color: #0f1115; /* لون داكن للعنوان الرئيسي */
+}
+
+/* تنسيق الكروت الجديدة */
+.gear-series-section .my-cards2 {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff; /* كروت بيضاء نظيفة */
+    border-radius: 14px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05); /* ظل ناعم جداً واحترافي */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eef0f2;
+}
+
+.gear-series-section .my-cards2:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* حاوية الصورة المتجاوبة */
+.gear-series-section .img-container {
+    width: 100%;
+    aspect-ratio: 16 / 10; /* أبعاد عرض مثالية للصور */
+    overflow: hidden;
+    background-color: #eaeaea;
+}
+
+.gear-series-section .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gear-series-section .my-cards2:hover .img-container img {
+    transform: scale(1.04);
+}
+
+/* تنسيق النصوص داخل الكارت */
+.gear-series-section .cardtitle {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.gear-series-section .cardtitle h3 {
+    font-size: 20px;
+    color: #ffffff; /* عنوان الكارت داكن */
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -0.3px;
+}
+
+.gear-series-section .cardtitle p {
+    font-size: 14px;
+    color: #ffffff; /* لون رمادي متوسط مريح جداً للقراءة */
+    line-height: 1.6;
+    margin-bottom: 0;
+    /* تحديد الفقرة بـ 4 أسطر كحد أقصى لتوحيد الارتفاع */
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* --- تنسيق أزرار الأسهم الفردية للسلايدر --- */
+.swiperBtn-series .series-next,
+.swiperBtn-series .series-prev {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease;
+}
+
+.swiperBtn-series .series-next { right: 15px; }
+.swiperBtn-series .series-prev { left: 15px; }
+
+.swiperBtn-series .series-next:hover,
+.swiperBtn-series .series-prev:hover {
+    background-color: #0f1115;
+    border-color: #0f1115;
+}
+
+/* تحويل السهم للون الأبيض عند تمرير الماوس فوق الدائرة السوداء */
+.swiperBtn-series .series-next:hover:after,
+.swiperBtn-series .series-prev:hover:after {
+    color: #ffffff;
+}
+
+.swiperBtn-series .series-next:after,
+.swiperBtn-series .series-prev:after {
+    font-family: swiper-icons;
+    font-size: 15px !important;
+    font-weight: bold;
+    color: #0f1115;
+    transition: color 0.2s ease;
+}
+
+/* حالة الزر المعطل */
+.swiperBtn-series .swiper-button-disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+
+/* ==========================================================================
+   1. كود الكروت والـ Hover (نفس فكرتكِ مع تنظيف التكرار)
+   ========================================================================== */
+.my-cards2 {
+    position: relative;
+    overflow: hidden;
+    background: #ffffff; /* تم توحيدها لتناسب القسم الفاتح */
+    border-radius: 12px;
+}
+
+.my-cards2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.my-cards2:hover img {
+    transform: scale(1.1);
+}
+
+.my-cards2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.cardtitle {
+    position: absolute;
+    top: 20px;
+    color: rgb(255, 255, 255);
+    width: 80%;
+    left: 40px;
+}
+
+.cardtitle p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* تأثير الخطوط عند الـ Hover */
+.brdrs {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.img-container{
+    position:relative
+}
+.brdrs .brdr1 {
+    width: 0%;
+    position: absolute;
+    background-color: #ffffff;
+    height: 2px;
+    transition: .3s;
+}
+
+.brdrs .brdr2 {
+    width: 2px;
+    background-color: #ffffff;
+    height: 0%;
+    transition: .3s;
+}
+
+.my-cards2:hover .brdr1 {
+    width: 100%;
+}
+
+.my-cards2:hover .brdr2 {
+    height: 100%;
+}
+
+
+/* ==========================================================================
+   2. ربط وتصحيح أزرار السلايدر الجديد (swiperBtn-series)
+   ========================================================================== */
+.swiperBtn-series {
+    position: relative;
+}
+
+/* دمج وتصحيح أزرار التالي والسابق لمنع الطيران في الشاشات */
+.swiperBtn-series .series-next,
+.swiperBtn-series .series-prev {
+    transition: .5s;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: solid 2px #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+
+/* التوزيع التلقائي المتجاوب بدلاً من بكسل ثابت */
+.swiperBtn-series .series-next {
+    right: 20px;
+    left: auto;
+}
+
+.swiperBtn-series .series-prev {
+    left: 20px;
+}
+
+/* تشغيل شكل السهم الداخلي */
+.swiperBtn-series .series-next:after,
+.swiperBtn-series .series-prev:after {
+    font-family: swiper-icons;
+    font-size: 18px !important;
+    font-weight: 700;
+    color: #000000;
+}
+
+/* تصحيح الأزرار عند التعطيل (الشفافية الصحيحة بدلاً من -1) */
+.swiper-button-disabled {
+    opacity: 0.3 !important;
+    pointer-events: none;
+    cursor: auto;
+}
+/* -------------------------- */
+
+/* ==========================================================================
+   SECTION 5: G HUB BANNER
+   ========================================================================== */
+.sec-5 .bac-img {
+    height: 500px; /* زيادة الطول قليلاً ليعطي مساحة مريحة للنصوص */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-size: cover;
+    background-position: center; /* تضمن توسط الصورة دائمًا */
+    background-image: url('/img2/test/imgi_43_gaming-shop-ghub-banner-desktop.jpg'); /* دعم قياسي وآمن لجميع المتصفحات */
+}
+
+/* إدارة مرنة للنصوص بدلاً من الـ width الثابت */
+.sec-5 .bac-img h1 {
+    width: 100%;
+    max-width: 500px;
+    font-weight: 700;
+    font-size: calc(1.8rem + 1.5vw); /* حجم خط ديناميكي يتكيف مع الشاشات */
+    line-height: 1.2;
+}
+
+.sec-5 .bac-img .ghub-text {
+    width: 100%;
+    max-width: 450px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #e0e0e0;
+    line-height: 1.5;
+}
+
+.sec-5 .bac-img button {
+    width: 200px;
+    border-radius: 40px;
+    padding: 12px;
+    color: #000;
+    font-weight: 600;
+    border: none;
+}
+
+/* ==========================================================================
+   SECTION 7: PERKS & FEATURES
+   ========================================================================== */
+.sec-7 {
+    background-color: #000000;
+}
+
+.sec-7 h2 {
+    font-size: calc(1.8rem + 1.2vw);
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.sec-7 h2 span {
+    color: #00b8fc;
+}
+
+.sec-7 .section-desc {
+    color: #a0a5b0; /* لون رمادي ناعم مريح جداً للقراءة على الخلفيات السوداء */
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* تنسيق كروت المزايا الستة */
+.my-cards6 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.my-cards6 img {
+    width: auto;
+    height: 35px;
+    object-fit: contain;
+    align-self: flex-start; /* يضمن بقاء الأيقونة في اليسار دائمًا */
+    margin-bottom: 15px;
+}
+
+.my-cards6 h5 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.my-cards6 p {
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+/* تنسيق الروابط والأنيميشن الخاص بـ bord-2 */
+.my-cards6 a {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none !important; /* إلغاء الخط الافتراضي المزعج للـ Link */
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 13px;
+    gap: 5px;
+    width: fit-content;
+}
+
+.my-cards6 a span {
+    transition: color 0.2s ease;
+}
+
+.bord-2 {
+    width: 100%; /* الخط يبدأ بعرض الكلمة بالكامل */
+    height: 3px;
+    background-color: #0099ff;
+    border-radius: 3px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+/* تأثير الـ Hover المحسن للينكات */
+.my-cards6 a:hover span {
+    color: #00b8fc;
+}
+
+.my-cards6 a:hover .bord-2 {
+    width: 50%; /* يتقلص الخط بشكل جمالي بدلاً من الأرقام الثابتة بالبكسل */
+    background-color: #00b8fc;
+}
+
+/* ==========================================================================
+   GLOBAL BUTTONS
+   ========================================================================== */
+button.btn-primary {
+    background-color: #00b8fc !important;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+button.btn-primary:hover {
+    box-shadow: 0 4px 15px rgba(0, 184, 252, 0.4);
+    background-color: #03a9e6 !important;
+    transform: translateY(-2px);
+}
+
+
+
+/* -------------------------- */
+
+
+
+/* التنسيق الأساسي للـ Footer */
+footer {
+  background-color: #000000;
+  border-top: solid 1px #1a1a1a;
+}
+
+/* تنسيق قوائم الروابط */
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+footer ul a {
+  color: #888888 !important;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer ul a:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+/* الصف السفلي الفاصل */
+footer .myrow-1 {
+  border-top: solid 1px #28292a;
+}
+
+/* لوجو السيكشن السفلي */
+footer .logo-2 {
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+}
+
+/* أيقونات التواصل الاجتماعي */
+.icons .social-icon {
+  color: #888888;
+  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #111111;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.icons .social-icon:hover {
+  color: #ffffff;
+  background-color: #007aff;
+}
+
+/* جزء اللغة والمنطقة الجغرافية */
+footer .icon p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #888888;
+  font-size: 13px;
+}
+
+footer .icon p svg {
+  color: #888888;
+  transition: color 0.2s ease;
+}
+
+footer .icon p a {
+  color: #888888 !important;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+/* تأثير الـ Hover على اختيار المنطقة */
+footer .icon p:hover a, 
+footer .icon p:hover stroke {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+footer .icon p:hover svg {
+  color: #ffffff;
+}

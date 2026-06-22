@@ -1,0 +1,1066 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+  overflow-x: hidden;
+}
+/* تنسيقات الـ Navbar العامة والمتجاوبة */
+.navbar {
+  border-bottom: 1px solid #1c1c1c;
+  background-color: #000000 !important;
+}
+
+.navbar-nav .nav-link {
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-item {
+  border-bottom: solid 3px transparent;
+}
+
+.navbar-nav .nav-item:hover {
+  border-bottom: solid 3px rgb(0, 153, 255);
+}
+
+.myimg svg {
+  color: white !important;
+  fill: white !important;
+  cursor: pointer;
+}
+
+/* تنسيق البحث المرن */
+.serch {
+  border-radius: 20px;
+  padding: 0 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 36px;
+}
+
+.serch input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  width: 110px;
+  font-size: 13px;
+}
+
+/* تثبيت دائرة إشعار السلة بشكل صحيح تماماً فوق الأيقونة */
+nav .num {
+  background-color: #0099ff;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  color: black;
+  pointer-events: none;
+}
+
+nav .num p {
+  font-size: 10px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* تعديلات الميديا كويري لتصحيح وضع الموبايل والتابلت */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #080808;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+    border: 1px solid #1f1f1f;
+  }
+  .navbar-nav {
+    align-items: flex-start !important;
+    gap: 10px;
+  }
+  .myimg {
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid #222;
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+  .serch {
+    width: 45%;
+  }
+  .serch input {
+    width: 100%;
+  }
+}
+
+/* -------------------------- */
+.herosec {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* تحديد ارتفاع مناسب للسيكشن */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.G5 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.G5 h1 {
+    font-size: clamp(3rem, 7vw, 6rem); /* خط متجاوب يقل ويصغر حسب الشاشة */
+    width: 90%;
+    max-width: 800px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.G5 h1 span {
+    color: #0099ff;
+}
+
+.G5 p {
+    font-size: 1.1rem;
+    width: 90%;
+    max-width: 600px;
+}
+
+/* تنسيق الفيديو ليصبح خلفية ثابتة */
+.myvideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.myvideo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* الأهم لملء المساحة */
+    object-position: center;
+}
+
+/* إضافة طبقة تعتيم خفيفة فوق الفيديو ليظهر النص بوضوح */
+.myvideo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* تعتيم 40% */
+}
+
+/* ------------------------------ */
+.sec-2 {
+    background-color: #000;
+    color: white;
+    padding-bottom: 60px;
+}
+
+.DESIGNED {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.DESIGNED h5 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.DESIGNED p {
+    font-size: 16px;
+    color: #a0a0a0; /* لون رمادي ليكون النص أقل حدة من العنوان */
+    max-width: 500px;
+}
+
+.myrow-2 {
+    display: flex;
+    align-items: flex-start; /* لضمان محاذاة الكروت من الأعلى */
+    justify-content: center;
+    flex-wrap: wrap; /* للسماح للكروت بالنزول للسطر التالي في الموبايل */
+    gap: 30px;
+    margin-top: 30px;
+}
+.myrow-2 a{
+    text-decoration:none;
+        color: #ffffff;
+}
+
+/* الكارد الأساسي */
+.card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 160px; /* زيادة العرض قليلاً لراحة العين */
+    text-align: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+}
+
+/* حاوية الصورة الدائرية */
+.mycardimg {
+    width: 144px;
+    height: 144px;
+    background-color: #ededf0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* ضروري جداً لكي لا يخرج تأثير التكبير خارج الدائرة */
+}
+
+.card2 img {
+    width: 80%; /* تصغير الصورة قليلاً داخل الدائرة لتبدو مرتبة */
+    height: auto;
+    transition: transform 0.4s ease;
+}
+
+.card2 p {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+/* التأثيرات عند الـ Hover */
+.card2:hover img {
+    transform: scale(1.2);
+}
+
+.card2:hover p {
+    color: #0099ff; /* تغيير لون النص عند التكبير */
+}
+
+
+/* --------------------------- */
+
+.sec-3 {
+    background-color: #000000;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.sec-3 h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    padding: 0 0 40px 20px;
+}
+
+.slid .slid2 {
+    height: 100%;
+    color: #ffffff;
+}
+
+.slid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slid p {
+    width: 100%;
+    margin-bottom: 15px;
+    color: #cccccc;
+}
+
+/* تنسيق الروابط والبوردر */
+.slid a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.slid a:hover {
+    text-decoration: underline;
+}
+
+.slid .bord {
+    width: 40px;
+    height: 3px;
+    background-color: #0099ff;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.slid a:hover .bord {
+    width: 20px;
+}
+
+/* تحسين الأزرار (أصبحت الآن ثابتة في المنتصف مهما كان حجم الشاشة) */
+.clr1, .clr {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.clr { left: 10px; }
+.clr1 { right: 10px; }
+
+/* توحيد تنسيق الأيقونات داخل الأزرار */
+.clr1::after, .clr::after {
+    font-family: swiper-icons;
+    font-size: 18px !important;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1;
+}
+
+/* إخفاء الأزرار عند التعطيل */
+.swiper-button-disabled {
+    opacity: 0.3 !important;
+    pointer-events: none;
+}
+
+/* تنسيقات إضافية للنصوص في قسم التصميم */
+.DESIGNED h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+.DESIGNED .PRO {
+    font-size: 18px;
+    font-weight: 500;
+    width: 58%;
+    color: white;
+}
+
+
+.swiper {
+    width: 100%;
+    overflow: hidden; 
+}
+
+.swiper-wrapper {
+    display: flex !important; 
+    height: auto !important;  
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    height: auto !important;
+}
+
+
+@media (max-width: 768px) {
+    .sec-3 {
+        padding-top: 20px !important;   
+        padding-left: 15px !important;   
+        padding-right: 15px !important;  
+        padding-bottom: 20px !important;
+    }
+
+    .sec-3 h2 {
+        padding-left: 0 !important;     
+        font-size: 28px !important;      
+    }
+}
+/* ------------------------------------ */
+
+.sec-4 {
+    background-color: #000;
+    color: white;
+}
+
+.myimgs img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.mycard {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* لتوحيد ارتفاع الكروت */
+}
+
+.myimgs img {
+    width: 100%;
+    height: 250px; /* أو auto حسب الرغبة */
+    object-fit: cover; /* لضمان عدم تشوه الصورة */
+}
+
+@media (max-width: 576px) {
+    .DESIGNED h2 {
+        font-size: 24px !important; /* تصغير العنوان في الموبايل */
+    }
+    .DESIGNED .PRO {
+        width: 100% !important;     /* جعل النص يأخذ عرض الشاشة بالكامل */
+        font-size: 14px !important;
+    }
+}
+/* ------------------------------------ */
+
+
+
+.sec-5 .bac-img {
+    height: 455px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-size: cover;
+    background-position: center; 
+    background-image: url(/img2/test/imgi_42_pro-series-lp-join-elite-banner-desktop.jpg);
+    padding-left: 20px; 
+}
+
+.sec-5 .bac-img h1 {
+    width: 60%; 
+    line-height: 1.2;
+}
+
+.sec-5 .bac-img {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-size: cover;
+    background-position: center; /* مهم جداً لتوسيط الصورة */
+    background-repeat: no-repeat;
+    padding-left: 5rem; /* ps-5 */
+    transition: all 0.3s ease;
+}
+
+.sec-5 .bac-img h1 {
+    width: 35%; /* نسبة معقولة للديسكتوب */
+    font-size: 2.5rem;
+    line-height: 1.1;
+}
+
+.sec-5 .bac-img button {
+    width: 220px;
+    border-radius: 50px; /* جعل الحواف دائرية أكثر لتبدو عصرية */
+    padding: 12px 25px;
+    font-weight: 700;
+    transition: transform 0.2s;
+}
+
+.sec-5 .bac-img button:hover {
+    transform: scale(1.05); /* تأثير بسيط عند المرور بالماوس */
+}
+
+
+
+@media (max-width: 768px) {
+    .sec-5 .bac-img {
+        height: 350px; 
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+        align-items: center; 
+    }
+
+    .sec-5 .bac-img h1 {
+        width: 90%;
+        font-size: 28px;
+    }
+
+        .sec-5 .bac-img {
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: center; /* توسيط المحتوى أفقياً */
+        text-align: center;
+        background-position: 70% center; /* تحريك تركيز الصورة قليلاً للموبايل */
+    }
+
+    .sec-5 .bac-img h1 {
+        width: 100%;
+        font-size: 1.8rem; /* تصغير الخط للموبايل */
+    }
+
+    .sec-5 .bac-img button {
+        width: 100%; /* الزر يأخذ عرض الشاشة لسهولة الضغط عليه بالإبهام */
+        max-width: 280px;
+    }
+}
+
+
+
+/* ------------------------ */
+.sec-6 {
+    background-color: #000;
+    color: white;
+}
+
+.RECOGNIZED h2 {
+    font-size: 36px; /* تصغير العنوان قليلاً للموبايل */
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* إلغاء الـ flex اليدوي الذي كان يسبب المشكلة */
+.companes {
+    display: flex;
+    flex-wrap: wrap; /* للسماح للعناصر بالنزول لسطر جديد على الموبايل */
+    gap: 0; 
+}
+
+.compane {
+    padding: 15px;
+}
+
+.compane h5 {
+    width: 100%; /* اجعليها 100% بدلاً من 72% لتجنب انحراف النص */
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.compane p {
+    width: 100%; /* اجعليها 100% */
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* تنسيق الصور للموبايل */
+.compane img {
+    max-width: 100px; /* تحديد حجم الصورة */
+    height: auto;
+    padding-bottom: 10px;
+}
+
+
+
+/* ------------------------------ */
+
+
+
+.sec-7 {
+    background-color: #000;
+    color: white;
+}
+
+.DESIGNEDES {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* اجعليها 100% افتراضياً */
+    max-width: 600px; /* للتحكم في عرض النص في الشاشات الكبيرة */
+    margin-bottom: 30px;
+}
+
+.DESIGNEDES h2 {
+    font-size: clamp(28px, 5vw, 48px); /* استخدام clamp لجعل الخط يتغير تلقائياً */
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.DESIGNEDES span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ccc;
+}
+
+/* تنسيق الكروت الناتجة عن الـ JS */
+.mycards-2 .mycard {
+    margin-bottom: 30px;
+}
+
+.mycards-2 .myimgs img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* لمسة جمالية للصور */
+}
+
+
+/* ------------------------------ */
+
+.sec-8 {
+    background-color: #000;
+    color: white;
+}
+
+.mycard2 {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.mycard2 img {
+    width: 100%;
+    height: 300px; /* تحديد ارتفاع ثابت للصورة لتوحيد الشكل */
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.mycard2:hover img {
+    transform: scale(1.05);
+}
+
+.mycards-3 .PC {
+    position: relative; 
+    padding: 15px 0;
+    color: white;
+    background: transparent;
+}
+
+
+@media (max-width: 768px) {
+    .mycard2 .PC {
+        position: relative; 
+        padding-top: 15px;
+    }
+    .mycard2 img {
+    width: 100%;
+    height: 300px; 
+    object-fit: contain; 
+    background-color: #000; 
+}
+}
+
+/* ------------------------------ */
+
+.sec-9 {
+    background-color: #000;
+    color: white;
+}
+
+
+
+
+.mycards-9 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mycards-5 {
+    /* height: 32px; */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: #ccc;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 5px;
+
+}
+
+.myimg-5 {
+    position: relative;
+}
+
+.myimg-5 button {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #000;
+    padding: 6px 23px;
+    border-radius: 40px;
+    letter-spacing: .03em;
+        border: none;
+    background-color: #00b8fc;
+}
+
+.mycards-5 {
+    transition: .3s;
+
+    background-color: rgba(255, 255, 255, 10%);
+    /* box-shadow: 10px 10px 10px 10px #ccc; */
+
+}
+
+.mycards-5:hover {
+    transition: .3s;
+
+    background-color: rgba(255, 255, 255, 10%);
+    box-shadow: 0 2px 4px 2px rgba(255, 255, 255, .3);
+
+}
+
+.mycards-5 div {
+    /* height: 32px; */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.mycards-5 p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+.mycards-5 span del {
+    color: rgb(90 92 99);
+}
+
+.mycards-5 img {
+    width: 32px;
+    height: 32px;
+}
+
+.svg {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.bordr-2 {
+    border: solid 2px white;
+    height: 25px;
+    width: 20px;
+    border-radius: 50%;
+    padding: 0px 10px;
+
+    display: flex;
+    text-align: start;
+    justify-content: center;
+}
+
+.myimg-5:hover img {
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+.myimg-5 img {
+    transition: .3s;
+}
+
+.myimg-5 {
+    overflow: hidden;
+}
+
+
+next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+
+    opacity: -1;
+    cursor: auto;
+    pointer-events: none;
+}
+
+next.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+    opacity: -1;
+    cursor: auto;
+    pointer-events: none;
+
+}
+
+.swiperBtn .clr1 {
+    transition: .5s;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 250px;
+    left: 1350px;
+    z-index: 99;
+}
+
+.swiperBtn .clr {
+    transition: .5s;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+
+    position: absolute;
+    top: 250px;
+    left: 20px;
+    z-index: 99;
+}
+
+.clr1.swiper-button-next:after {
+    font-family: swiper-icons;
+    font-size: 18px !important;
+    font-weight: 700;
+    text-transform: none !important;
+    color: #000000;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+
+}
+
+
+.clr.swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: 18px !important;
+    font-weight: 700;
+    text-transform: none !important;
+    color: #000000;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+
+}
+
+
+
+/* احذفي الـ top و left الثابتين وأضيفي هذا: */
+.swiperBtn .clr1, .swiperBtn .clr {
+    position: absolute;
+    top: 50%; /* تجعلها في المنتصف عمودياً */
+    transform: translateY(-50%);
+    z-index: 99;
+}
+
+.swiperBtn .clr { left: 0px !important; }
+.swiperBtn .clr1 { right: 0px !important; left: auto !important; }
+
+
+.myimg-5 img {
+    width: 100%;
+    height: 250px; /* أو حسب الارتفاع المناسب لتصميمك */
+    object-fit: cover; /* لضمان أن الصورة تغطي المساحة دون تشوه */
+    object-position: center; /* لتركيز وسط الصورة */
+}   
+
+/* هذا الكود يعمل فقط عندما تكون الشاشة أقل من 768 بكسل (الموبايل) */
+@media (max-width: 768px) {
+    .sec-9 {
+        padding-top: 20px !important;    /* تقليل البادينج العلوي */
+        padding-bottom: 20px !important; /* تقليل البادينج السفلي */
+        padding-left: 10px !important;   /* تقليل البادينج الجانبي */
+        padding-right: 10px !important;  /* تقليل البادينج الجانبي */
+    }
+
+    /* تقليل البادينج الخاص بالسلايدر نفسه */
+    .sec-9 .my-Swipers {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+}
+@media (max-width: 576px) {
+    .mycards-5 {
+        flex-direction: column; /* جعل العناصر فوق بعضها في الموبايل */
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .mycards-5 div {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* ---------------------------------- */
+
+
+
+.sec-10 .bac-img {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    /* نغير التنسيق ليكون متجاوباً */
+    background-size: cover; 
+    background-position: center center; /* تضمن توسيط الصورة دائماً */
+    background-repeat: no-repeat;
+    background-image: url(/img2/test/imgi_43_pro-series-lp-hub-settings-banner-desktop.jpg);
+}
+
+.sec-10 .bac-img h1 {
+    font-size: 48px;
+    width: 35%; /* زيادة العرض قليلاً للديسكتوب */
+    line-height: 1.1;
+}
+
+.sec-10 .bac-img p {
+    font-size: 18px;
+    width: 40%; /* زيادة العرض قليلاً */
+}
+
+
+.btn-primary {
+    background-color: #00b8fc !important;
+    color: #000 !important;
+    border: none !important;
+    transition: 0.3s;
+        width: 220px;
+    border-radius: 50px; /* جعل الحواف دائرية أكثر لتبدو عصرية */
+    padding: 12px 25px;
+    font-weight: 700;
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #00b8fc !important;
+    box-shadow: 0 2px 4px 2px rgba(255, 255, 255, 0.3);
+}
+
+
+/* التعديلات المتجاوبة للموبايل */
+@media (max-width: 768px) {
+    .sec-10 .bac-img {
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: center; /* توسيط المحتوى */
+        text-align: center;
+        background-position: 70% center; /* تغيير تركيز الصورة */
+    }
+
+    .sec-10 .bac-img h1 {
+        width: 90%; /* عرض كامل تقريباً */
+        font-size: 32px; /* تصغير الخط للموبايل */
+    }
+
+    .sec-10 .bac-img p {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+/* ----------------------------- */
+
+
+/* التنسيق الأساسي للـ Footer */
+footer {
+  background-color: #000000;
+  border-top: solid 1px #1a1a1a;
+}
+
+/* تنسيق قوائم الروابط */
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+footer ul a {
+  color: #888888 !important;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer ul a:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+/* الصف السفلي الفاصل */
+footer .myrow-1 {
+  border-top: solid 1px #28292a;
+}
+
+/* لوجو السيكشن السفلي */
+footer .logo-2 {
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+}
+
+/* أيقونات التواصل الاجتماعي */
+.icons .social-icon {
+  color: #888888;
+  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #111111;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.icons .social-icon:hover {
+  color: #ffffff;
+  background-color: #007aff;
+}
+
+/* جزء اللغة والمنطقة الجغرافية */
+footer .icon p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #888888;
+  font-size: 13px;
+}
+
+footer .icon p svg {
+  color: #888888;
+  transition: color 0.2s ease;
+}
+
+footer .icon p a {
+  color: #888888 !important;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+/* تأثير الـ Hover على اختيار المنطقة */
+footer .icon p:hover a, 
+footer .icon p:hover stroke {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+footer .icon p:hover svg {
+  color: #ffffff;
+}
