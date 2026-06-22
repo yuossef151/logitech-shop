@@ -46,15 +46,20 @@ mycarts.innerHTML += `
         <div class="card2">
             <h5>${el.dalar}${(el.total * el.proQty).toFixed(2)}</h5>
             
+            
+
+            <div class="qty">
             <div class="numofcart">
                 <button onclick="dele(${endix})" class="mbtn">-</button>
                 <span>${el.proQty}</span>
                 <button onclick="add(${endix})" class="mbtn">+</button>
             </div>
-
+            
             <button class="mbtn remove-text" onclick="delet(${endix})" style="color:red; font-size: 11px;">
                 Remove
             </button>
+            </div>
+
         </div>
     </div>
 </div>

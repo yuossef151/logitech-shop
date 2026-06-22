@@ -43,7 +43,7 @@ var swiperSeries = new Swiper(".mySwipers", {
   spaceBetween: 25,
   direction: "horizontal",
   navigation: {
-    nextEl: ".next-series", // تم تغيير الاسم هنا لمنع التداخل تماماً
+    nextEl: ".next-series", 
     prevEl: ".prev-series",
   },
   breakpoints: {
